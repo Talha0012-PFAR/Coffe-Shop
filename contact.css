@@ -1,0 +1,78 @@
+/* Base styles for all devices */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-section {
+    background-color: black;
+    padding: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-items ul li {
+    margin: 0 15px;
+}
+
+/* Media Query for devices with a maximum width of 768px (Tablets and smaller) */ 
+@media (max-width: 768px) {
+    .nav-items ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-items ul li {
+        margin: 10px 0;
+    }
+
+    .contact-section-2 {
+        padding: 20px;
+    }
+}
+
+/* Media Query for devices with a minimum width of 769px (Desktops and larger) */
+@media (min-width: 769px) {
+    .container-5, .container-6, .container-7 {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .col4 {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .email-bt, .message-bt {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Media Query for larger devices with a minimum width of 1200px */
+@media (min-width: 1200px) {
+    .nav-items ul {
+        margin-right: 20px;
+    }
+
+    .footer-section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .col-5 {
+        width: 30%;
+    }
+}
+
